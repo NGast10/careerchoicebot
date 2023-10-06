@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>*</pattern>
+	    <template>Hello! Welcome to Career Bot!
+	    Would you like some career advice?
+	    <button>
+	        <text>Yes please I am having trouble finding a career!</text>
+	        <postback>Advice</postback>
+        </button>
+        <button>
+	        <text>No thanks!</text>
+	        <postback>No advice</postback>
+        </button>
+	    </template>
+    </category>
+    
+    
+    <category>
+        <pattern>No advice</pattern>
+        <template>Have a great day!</template>
+    </category>
+    
+    
+    <category>
+        <pattern>Advice</pattern>
+        <template>
+            Okay let me ask you a few questions to find the right career for you!
+            Do you like doing math?
+            
+            <button>
+                <text>No I hate math.</text>
+                <postback>no math</postback>
+            </button>
+            
+            <button>
+                <text>Yes I love math!</text>
+                <postback>yes math</postback>
+            </button>
+        
+        </template>
+        
+    </category>
+    
+    
+    <category>
+        <pattern>no math</pattern>
+        <template>
+            Great math is hard. 
+            Do you like writing code and programming?
+            
+            <button>
+                <text>No I hate programming.</text>
+                <postback>nono program</postback>
+            </button>
+            
+            <button>
+                <text>Yes I love programming!</text>
+                <postback>yesyes program</postback>
+            </button>
+        </template>
+    </category>
+    
+    
+    <category>
+        <pattern>yesyes program</pattern>
+        <template>
+            Great programming is awesome. 
+            Do you have an interest in Networks?
+            
+            <button>
+                <text>No I hate networks.</text>
+                <postback>no networks</postback>
+            </button>
+            
+            <button>
+                <text>Yes I love networks!</text>
+                <postback>yes networks</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>no networks</pattern>
+        <template>
+            Great networks are hard. Based on your answers to the previous questions, the best career for you is a Software Engineer!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>yes networks</pattern>
+        <template>
+            Great networks are awesome. Based on your answers to the previous questions, the best career for you is a Network Administrator!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>nono program</pattern>
+        <template> 
+            Great programming is hard. Based on your answers to the previous questions, the best career for you is a Software QA Tester!
+        </template>
+    </category>
+   
+    <category>
+        <pattern>yes math</pattern>
+        <template>
+            Great, math is awesome! Do you like writing code and programming?
+            
+            <button>
+                <text>Yes I love programming!</text>
+                <postback>yes program</postback>
+            </button>
+            
+            <button>
+                <text>No I don't really like programming.</text>
+                <postback>no program</postback>
+            </button>
+        </template>
+    </category>
+    
+    
+    
+    <category>
+        <pattern>yes program</pattern>
+        <template>
+            Great programming is awesome. 
+            Based on your answers to the previous questions, the best career for you is a Data Scientist!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>no program</pattern>
+        <template>
+            Great programming is hard.
+            Based on your answers to the previous questions, the best career for you is a Database Administrator!
+        </template>
+    </category>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</aiml>
